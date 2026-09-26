@@ -1,0 +1,94 @@
+{
+  "numeric_cols": [
+    "customer_age",
+    "policy_tenure_years",
+    "annual_premium_inr",
+    "claim_amount_inr",
+    "days_to_report",
+    "witnesses",
+    "num_past_claims_3yrs"
+  ],
+  "categorical_cols": [
+    "gender",
+    "policy_type",
+    "incident_type",
+    "incident_severity",
+    "police_report_filed",
+    "documents_complete",
+    "claim_channel",
+    "income_bracket",
+    "claim_location"
+  ],
+  "optimal_threshold": 0.42,
+  "best_model": "XGBoost",
+  "metrics": {
+    "Logistic Regression": {
+      "Accuracy": 0.8113,
+      "Precision": 0.507,
+      "Recall": 0.8073,
+      "F1-Score": 0.6228,
+      "ROC-AUC": 0.8881,
+      "Confusion Matrix": [
+        [
+          6555,
+          1515
+        ],
+        [
+          372,
+          1558
+        ]
+      ]
+    },
+    "Random Forest": {
+      "Accuracy": 0.832,
+      "Precision": 0.5461,
+      "Recall": 0.7674,
+      "F1-Score": 0.6381,
+      "ROC-AUC": 0.8914,
+      "Confusion Matrix": [
+        [
+          6839,
+          1231
+        ],
+        [
+          449,
+          1481
+        ]
+      ]
+    },
+    "XGBoost": {
+      "Accuracy": 0.8727,
+      "Precision": 0.66,
+      "Recall": 0.7021,
+      "F1-Score": 0.6804,
+      "ROC-AUC": 0.905,
+      "Confusion Matrix": [
+        [
+          7372,
+          698
+        ],
+        [
+          575,
+          1355
+        ]
+      ]
+    },
+    "ANN (Keras)": {
+      "Accuracy": 0.8564,
+      "Precision": 0.5999,
+      "Recall": 0.7684,
+      "F1-Score": 0.6738,
+      "ROC-AUC": 0.902,
+      "Confusion Matrix": [
+        [
+          7081,
+          989
+        ],
+        [
+          447,
+          1483
+        ]
+      ]
+    }
+  }
+}
