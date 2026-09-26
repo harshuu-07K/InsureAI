@@ -1,0 +1,50 @@
+[
+  {
+    "question": "How do I file a health or motor insurance claim?",
+    "answer": "To file a claim with InsureAI, navigate to the claims portal or app, enter your policy number, select the incident type (accident, theft, critical illness, hospitalization), provide incident date and location, and upload supporting documents such as doctor prescriptions, repair estimates, and photos."
+  },
+  {
+    "question": "What documents do I need to file an auto accident claim?",
+    "answer": "For an auto accident claim, you need: 1) Policy copy, 2) Driving license of the person driving, 3) Vehicle Registration Certificate (RC), 4) Clear photos of vehicle damage, 5) Police FIR/GD entry (mandatory for third-party injury, major collision, or theft), and 6) Estimated repair bill from an authorized network garage."
+  },
+  {
+    "question": "What is the difference between cashless and reimbursement claims?",
+    "answer": "Under a Cashless claim, InsureAI settles eligible medical or repair expenses directly with our network hospitals or network garages without you having to pay upfront (except deductibles). Under a Reimbursement claim, you pay the hospital or repair shop first and submit original bills, receipts, and discharge summary within 15–30 days for payout."
+  },
+  {
+    "question": "How does InsureAI detect fraudulent claims?",
+    "answer": "InsureAI uses an ensemble machine learning classification engine (SMOTE-balanced Random Forest & XGBoost) trained on claim-to-premium ratio, days elapsed to report, witness verification, past claim frequency, and incident severity anomalies to identify suspicious claims for manual investigative review."
+  },
+  {
+    "question": "What factors influence my annual health insurance premium?",
+    "answer": "Your health insurance premium depends on age, BMI, tobacco/smoking habits, geographical zone (tier-1 vs tier-2 healthcare costs), pre-existing medical conditions, family medical history, and chosen deductible/coverage sum."
+  },
+  {
+    "question": "How does automated vehicle damage verification work?",
+    "answer": "You can upload high-resolution photos of the damaged vehicle directly to our app. Our Convolutional Neural Network (CNN with MobileNetV2 transfer learning) scans the exterior panels for structural damage, dents, bumper fractures, and shattered glass in under two seconds."
+  },
+  {
+    "question": "What is a deductible in an insurance policy?",
+    "answer": "A deductible is the predetermined out-of-pocket amount you agree to pay towards a covered claim before InsureAI pays the remaining eligible claim expenses. Higher deductibles typically lower your annual premium."
+  },
+  {
+    "question": "What is the timeline for claim settlement?",
+    "answer": "Pre-authorization for cashless hospitalization is approved within 2 hours. Cashless vehicle repair approvals take 24–48 hours upon surveyor/AI assessment. Reimbursement claims are processed and disbursed within 5 to 7 business days following document verification."
+  },
+  {
+    "question": "What should I do if my claim is rejected or underpaid?",
+    "answer": "If your claim is rejected or partial deductions are applied, you will receive a formal Claim Rejection/Deduction Memo stating the exact clause or exclusion. You can file a grievance or submit missing clinical/repair documents for reconsideration within 30 days."
+  },
+  {
+    "question": "Can I add family members to an existing health policy?",
+    "answer": "Yes, you can add your spouse, dependent children (up to age 25), and dependent parents to a Family Floater policy either during the annual renewal window or within 30 days of a qualifying life event (marriage or birth of a child)."
+  },
+  {
+    "question": "What is No Claim Bonus (NCB) in motor insurance?",
+    "answer": "No Claim Bonus is a discount on your own-damage premium awarded for every claim-free policy year. It starts at 20% after the first claim-free year and can accumulate up to a maximum of 50% over consecutive claim-free years."
+  },
+  {
+    "question": "Are pre-existing diseases covered immediately upon policy inception?",
+    "answer": "Most standard retail health policies have a waiting period ranging from 24 to 36 months for pre-existing medical conditions (such as diabetes or hypertension) before coverage becomes fully active, unless specific day-one riders are purchased."
+  }
+]
