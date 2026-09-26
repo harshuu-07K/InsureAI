@@ -1,0 +1,41 @@
+{
+  "numeric_cols": [
+    "age",
+    "bmi",
+    "children",
+    "annual_income_inr"
+  ],
+  "categorical_cols": [
+    "gender",
+    "smoker",
+    "region",
+    "occupation",
+    "exercise_frequency",
+    "alcohol_consumption",
+    "medical_history",
+    "family_medical_history"
+  ],
+  "best_model": "XGBoost",
+  "metrics": {
+    "Linear Regression": {
+      "R2": 0.8982,
+      "MAE": 2516.58,
+      "RMSE": 3200.35
+    },
+    "Random Forest": {
+      "R2": 0.9164,
+      "MAE": 2313.67,
+      "RMSE": 2899.36
+    },
+    "XGBoost": {
+      "R2": 0.9294,
+      "MAE": 2125.05,
+      "RMSE": 2664.75
+    },
+    "ANN (Keras)": {
+      "R2": 0.9174,
+      "MAE": 2274.92,
+      "RMSE": 2883.0
+    }
+  }
+}

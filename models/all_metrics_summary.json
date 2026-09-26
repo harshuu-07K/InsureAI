@@ -1,0 +1,103 @@
+{
+  "regression": {
+    "Linear Regression": {
+      "R2": 0.8982,
+      "MAE": 2516.58,
+      "RMSE": 3200.35
+    },
+    "Random Forest": {
+      "R2": 0.9164,
+      "MAE": 2313.67,
+      "RMSE": 2899.36
+    },
+    "XGBoost": {
+      "R2": 0.9294,
+      "MAE": 2125.05,
+      "RMSE": 2664.75
+    },
+    "ANN (Keras)": {
+      "R2": 0.9174,
+      "MAE": 2274.92,
+      "RMSE": 2883.0
+    }
+  },
+  "classification": {
+    "Logistic Regression": {
+      "Accuracy": 0.8113,
+      "Precision": 0.507,
+      "Recall": 0.8073,
+      "F1-Score": 0.6228,
+      "ROC-AUC": 0.8881,
+      "Confusion Matrix": [
+        [
+          6555,
+          1515
+        ],
+        [
+          372,
+          1558
+        ]
+      ]
+    },
+    "Random Forest": {
+      "Accuracy": 0.832,
+      "Precision": 0.5461,
+      "Recall": 0.7674,
+      "F1-Score": 0.6381,
+      "ROC-AUC": 0.8914,
+      "Confusion Matrix": [
+        [
+          6839,
+          1231
+        ],
+        [
+          449,
+          1481
+        ]
+      ]
+    },
+    "XGBoost": {
+      "Accuracy": 0.8727,
+      "Precision": 0.66,
+      "Recall": 0.7021,
+      "F1-Score": 0.6804,
+      "ROC-AUC": 0.905,
+      "Confusion Matrix": [
+        [
+          7372,
+          698
+        ],
+        [
+          575,
+          1355
+        ]
+      ]
+    },
+    "ANN (Keras)": {
+      "Accuracy": 0.8564,
+      "Precision": 0.5999,
+      "Recall": 0.7684,
+      "F1-Score": 0.6738,
+      "ROC-AUC": 0.902,
+      "Confusion Matrix": [
+        [
+          7081,
+          989
+        ],
+        [
+          447,
+          1483
+        ]
+      ]
+    }
+  },
+  "cnn_damage": {
+    "Validation Accuracy": 0.9196,
+    "Target Met": true
+  },
+  "lstm_sentiment": {
+    "Accuracy": 1.0,
+    "F1-Score": 1.0,
+    "Target Met": true
+  }
+}
