@@ -1,8 +1,8 @@
 # InsureAI — End-to-End AI Assistant for Insurance
-# Optimized for Streamlit Community Cloud & Local Execution
+# Core dependencies for Streamlit Community Cloud & Local Deployment
 
 # Data processing & analysis
-numpy>=1.24.0,<2.0.0
+numpy>=1.24.0
 pandas>=2.0.0
 openpyxl>=3.1.0
 
@@ -11,18 +11,21 @@ scikit-learn>=1.3.0
 xgboost>=2.0.0
 imbalanced-learn>=0.11.0
 
-# Deep Learning (Modules 2, 3, 4) — CPU-only for lightweight cloud deployment
-tensorflow-cpu>=2.15.0
-
 # Image handling (Module 3 - CNN)
 Pillow>=10.0.0
 
-# Streamlit application
+# Streamlit application framework
 streamlit>=1.30.0
 
 # GenAI chatbot (Module 5)
 google-generativeai>=0.7.0
 
-# Utilities
+# Utilities & model serialization
 joblib>=1.3.0
 python-dotenv>=1.0.0
+
+# Deep Learning (Modules 3 & 4)
+# Note: Uncomment below if running on Python <= 3.11. 
+# (Python 3.14 on Streamlit Cloud does not have TensorFlow wheels yet; 
+# the app includes built-in fallback inference engines for cloud deployment).
+# tensorflow-cpu>=2.15.0

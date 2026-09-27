@@ -15,8 +15,12 @@ import streamlit as st
 from dotenv import load_dotenv
 
 # Optional TensorFlow import (cached)
-import tensorflow as tf
-from tensorflow.keras.preprocessing.sequence import pad_sequences
+try:
+    import tensorflow as tf
+    from tensorflow.keras.preprocessing.sequence import pad_sequences
+except (ImportError, Exception):
+    tf = None
+    pad_sequences = None
 
 load_dotenv()
 
@@ -391,14 +395,14 @@ def load_all_models():
 
     # 3. CNN Damage Model
     try:
-        if os.path.exists('models/cnn_damage_model.keras'):
+        if tf is not None and os.path.exists('models/cnn_damage_model.keras'):
             artifacts['cnn_model'] = tf.keras.models.load_model('models/cnn_damage_model.keras')
     except Exception as e:
         st.warning(f"Note: CNN model loading: {e}")
 
     # 4. LSTM Sentiment Model
     try:
-        if os.path.exists('models/lstm_sentiment_model.keras'):
+        if tf is not None and os.path.exists('models/lstm_sentiment_model.keras'):
             artifacts['lstm_model'] = tf.keras.models.load_model('models/lstm_sentiment_model.keras')
         if os.path.exists('models/sentiment_tokenizer.pkl'):
             with open('models/sentiment_tokenizer.pkl', 'rb') as f:
