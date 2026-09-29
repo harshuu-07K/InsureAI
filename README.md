@@ -9,6 +9,8 @@
 ![Streamlit](https://img.shields.io/badge/Streamlit-1.30+-red?logo=streamlit)
 ![XGBoost](https://img.shields.io/badge/XGBoost-2.0+-green)
 
+website link : https://insure-ai-capstone.streamlit.app/
+
 ---
 
 ## 📋 Table of Contents
